@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>crud table</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+
+</head>
+<body>
+    <div class="container-fluid py-5 ">
+        <div class="row justify-content-end text-end">
+            <div class="col-md-12">
+                <button onclick="displayrecord( )" id="addBtn" class="btn btn-info">Add New Record</button>
+                <button style="display:none ;" onclick="saveupdate()" id="save" class="btn btn-info">Save Data</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+  
+        <table class="table text-center w-100 m-auto">
+            <thead>
+                <th>Name </th>
+                <th>Age </th>
+                <th>Email </th>
+                <th>Address </th>
+                <th>Gender </th>
+                <th>date_of_birth</th>
+            </thead>
+            <tbody id="newrecord">
+                <tr class="text-center">
+                    <td><input id="name" type="text" class="border-0 text-center bg-light"></td>
+                    <td><input id="age" type="text" class="border-0 text-center bg-light"></td>
+                    <td><input id="email" type="text" class="border-0 text-center bg-light"></td>
+                    <td><input id="address" type="text" class="border-0 text-center bg-light"></td>
+                    <td><input id="gender" type="text" class="border-0 text-center bg-light"></td>
+                    <td><input id="dateOfBirth" type="text" class="border-0 text-center bg-light"></td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container-fluid">
+        <table class="table text-center w-100 m-auto">
+            <thead>
+                <th>Name </th>
+                <th>Age </th>
+                <th>Email </th>
+                <th>Address </th>
+                <th>Gender </th>
+                <th>date_of_birth</th>
+                <th>Edit </th>
+                <th>Delete </th>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
